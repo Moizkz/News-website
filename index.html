@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.212);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    backdrop-filter: blur(10px);
+}
+.nav-links ul{
+    list-style:none;
+    display: flex;
+    gap: 30px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: black;
+}
+.navbar ul li a:hover{
+    background-color: black;
+    transition: 1s;
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.landing{
+    height: 100vh;
+    width: 99%;
+    border: 1px solid white;
+}
+.main_part{
+    height: 62%;
+    width: 95%;
+    /* background-image: url(img17.jpg); */
+    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 80px;
+    border-radius: 15px;
+    animation: slideshow 60s infinite;
+    background-position-y: -90px
+}
+.landing{
+    animation: fade 2s 1;
+}
+.sport{
+    animation: fade 2s 1;
+}
+.tech{
+    animation: fade 2s 1;
+}
+.tech2{
+    animation: fade 2s 1;
+}
+.entertainment{
+    animation: fade 2s 1;
+}
+.story{
+    animation: zoomout 2s 1;
+}
+    .politics{
+    animation: fade 2s 1;
+}
+
+.main_part h1{
+    color: white;
+    text-align: center;
+    padding-top: 20%;
+}
+.main_part2 h1{
+    color: white;
+    text-align: center;
+    padding-top: 320px;
+}
+.main_part2 p{
+    color: white;
+    text-align: center;
+    padding: 15px 180px;
+}
+.politics2 .side_part2 h1{
+    color: white;
+    text-align: center;
+    padding-top: 260px;
+}
+.politics2 .side_part2 p{
+    color: white;
+    text-align: center;
+    padding: 15px 60px;
+}
+.entertainment .side_part2 h1{
+    color: white;
+    text-align: center;
+    padding-top: 260px;
+}
+.entertainment .side_part2 p{
+    color: white;
+    text-align: center;
+    padding: 15px 60px;
+}
+.tech2 h1{
+    color: white;
+    text-align: center;
+    padding-top: 30%;
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.tech2 p{
+    color: white;
+    text-align: center;
+    padding: 15px 245px;
+}
+.tech .side_part2 h1{
+    color: white;
+    text-align: center;
+    padding-top: 260px;
+}
+.tech .side_part2 p{
+    color: white;
+    text-align: center;
+    padding: 15px 60px;
+}
+.sport .side_part2 h1{
+    color: white;
+    text-align: center;
+    padding-top: 260px;
+}
+.sport .side_part2 p{
+    color: white;
+    text-align: center;
+    padding: 15px 60px;
+}
+.c1{
+    animation: zoomout 2s 1;
+}
+.politics2 .c1 h4{
+    font-size: 13px;
+    color: black;
+    margin-left: 40%;
+    padding-top: 28px;
+}
+.politics2 .c1 pre{
+    color: gray;
+    font-size: 10px;
+    margin-left: 45%;
+    margin-bottom: 0%;
+}
+.sport .c1 h4{
+    font-size: 13px;
+    color: black;
+    margin-left: 40%;
+    padding-top: 28px;
+}
+a{
+    text-decoration: none;
+}
+.sport .c1 pre{
+    color: gray;
+    font-size: 10px;
+    margin-left: 45%;
+    margin-bottom: 0%;
+}
+.entertainment .c1 h4{
+    font-size: 13px;
+    color: black;
+    margin-left: 40%;
+    padding-top: 28px;
+}
+.entertainment .c1 pre{
+    color: gray;
+    font-size: 10px;
+    margin-left: 45%;
+    margin-bottom: 0%;
+}
+.tech .c1 h4{
+    font-size: 13px;
+    color: black;
+    margin-left: 40%;
+    padding-top: 28px;
+}
+.tech .c1 pre{
+    color: gray;
+    font-size: 10px;
+    margin-left: 45%;
+    margin-bottom: 0%;
+}
+.story h4{
+    font-size: 13px;
+    color: black;
+    margin-left: 3%;
+    padding-top: 0px;
+}
+.story .headline{
+    position: static;
+}
+.story pre{
+    color: gray;
+    font-size: 10px;
+    margin-left: 4%;
+    margin-bottom: 0%;
+}
+.headline{
+    position: relative;
+    bottom: 120%;
+}
+.main_part p{
+    color: white;
+    text-align: center;
+    padding: 0 180px;
+}
+.c1{
+    width: 24%;
+    display: inline-block;
+    border-radius: 15px;
+    /* background: black; */
+}
+.c1 h4{
+    color: white;
+    padding: 10px 20px;
+    padding-top: 50px;
+}
+.side_part{
+    height: 15%;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    margin-top: 1%;
+    flex-direction: row;
+    gap: 20px;
+}
+.politics{
+        height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.main_part2{
+    height: 90%;
+    width: 95%;
+    background-color: black;
+    border-radius: 15px;background-image: url(img10.png);
+    background-size: cover;
+}
+.politics2{
+    height: 90vh;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    gap: 20px;   
+}
+.side_part1{
+    height: 80%;
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.side_part1 .c1{
+    height: 16%;
+    width: 90%;
+}
+.side_part2{
+    height: 80%;
+    width: 53%;
+    background-color: black;
+    border-radius: 15px;
+}
+.c1_background{
+    background-color: wheat;
+    width: 40%;
+    height: 100%;
+    border-radius: 15px;
+}
+.sport{
+    height: 90vh;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgreen;
+    gap: 20px;
+    
+}
+.sport .side_part1{
+    background-color: transparent;
+}
+.sport2{
+    height: 90vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.side_part3{
+    background: black;
+    height: 90%;
+    width: 50%;
+    border-radius: 15px;
+}
+.side_part3 h1{
+    color: white;
+    text-align: center;
+    padding-top: 45%;
+}
+.side_part3 p{
+    color: white;
+    text-align: center;
+    padding: 15px 60px;
+}
+.side_part4{
+    background: none;
+    height: 90%;
+    width: 42%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.side_part4 h1{
+    padding: 15px;
+}
+.side_part4 p{
+    padding: 0px 25px;
+}
+.c1 pre{
+    position: relative;
+    bottom: 5px;
+}
+.tech{
+    height: 90vh;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #c9f08c;
+    gap: 20px;   
+}
+.tech .side_part1{
+    background:transparent;
+}
+.tech2{
+    height: 90vh;
+    background-color: black;
+}
+.entertainment{
+    height: 90vh;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+    gap: 20px;   
+}
+.entertainment .side_part1{
+    background-color: transparent;
+}
+.stories{
+    height: 90vh;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+.stories1{
+height: 40%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+} 
+.story{
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+}
+.stories2{
+height: 40%;
+width: 100%;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
+} 
+.bg{
+    background-color: black;
+    height: 260%;
+    width: 100%;
+    border-radius: 15px;
+}
+.description{
+    /* border: 1px solid black; */
+    height: 29%;
+    width: 100%;
+}
+.contact{
+    height: 90vh;
+    background-color: black;
+}
+.contact h1{
+    color: white;
+    text-align: center;
+    padding-top: 4%;
+}
+.con1{
+height: 30%;
+width: 90%;
+display: flex;
+flex-direction: row;
+align-items: flex-end;
+margin: auto;
+}
+.con1 h1{
+    margin: 0 8%;
+    font-size: 1.8rem;
+}
+.c2{
+height: 45%;
+width: 90%;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin: auto;
+}
+.side_part5{
+    /* border: 1px solid white; */
+    height: 90%;
+    width: 49%;
+}
+.side_part6{
+    /* border: 1px solid white; */
+    height: 90%;
+    width: 49%;
+}
+.side_part6 input{
+    width: 60%;
+    background-color: white;
+    border-radius: 25px;
+    height: 35%;
+    margin: 40px 25px;
+    padding: 0px 5%;
+    border: none;
+}
+.side_part6 button{
+    width: 26%;
+    background-color: lightgreen;
+    border-radius: 25px;
+    height: 35%;
+    position: relative;
+    float: right;
+    right: 75px;
+    bottom: 92px;
+    font-size: 20px;
+    font-weight: bold;
+    border: navajowhite;
+}
+.side_part6 button:hover{
+    background-color: darkgreen;
+    transition: 1s;
+}
+a:hover h4{
+    color: blue;
+    transition: 1s;
+}
+.side_part7{
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    justify-content: space-evenly;
+}
+.side_part8{
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    justify-content: space-evenly;
+}
+.side_part9{
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    justify-content: space-evenly;
+}
+.side_part10{
+    height: 90%;
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    justify-content: space-evenly;
+}
+hr{
+    width: 90%;
+    margin: auto;
+}
+.contact h4{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* media queries */
+/* for tablet  */
+
+@media (max-width:1024px){
+    .side_part{
+        display: grid;
+        gap: 10px;
+        height: 25%;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+    .c1{
+        width: 98%;
+    }
+    .main_part h1{
+        padding-top: 65%;
+    }
+    .main_part p{
+        padding: 0 97px;
+    }
+    .c1 h4{
+        padding-top: 25%;
+    }
+    .main_part2 h1{
+            padding-top: 88%
+    }
+    .side_part6 button{
+        width: 30%;
+        height: 70PX;
+        bottom: -40px;
+        right: 0px;
+    }
+    .side_part6 input {
+        width: 65%;
+        height: 70PX;
+        margin-right: -75px;
+    }
+    .side_part1 {
+        height: 76%;
+        width: 50%;
+        flex-direction: column;
+    }
+    .side_part1 .c1 {
+    margin: auto;
+    }
+    .side_part2 {
+        height: 56%;
+        width: 45%;
+        margin-top: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .politics2 .side_part2 h1 {
+        padding: 0 10px;
+        font-size: 1.8rem;
+    }
+    .sport .side_part2 h1 {
+        padding: 0 12px;
+        padding-top: 88%;
+    }
+    .tech .side_part2 h1 {
+        padding: 0 10px;
+    }
+    .entertainment .side_part2 h1 {
+    padding: 0 10px;
+    }
+    .tech2 p {
+        padding: 15px 112px;
+    }
+    .tech2 h1 {
+        padding-top: 75%;
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+    .headline {
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    .c1_background {
+        width: 45%;
+    }
+    .stories1 {
+        margin-top: 85px;
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 50%;
+        width: 85%;
+        margin-left: 10%;
+    }
+    .stories2 {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        height: 50%;
+        width: 85%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .story{
+        height: 100%;
+        width: 85%;
+    }
+}
+
+/* for moblile phones  */
+ 
+@media(max-width:540px){
+    .nav-links ul {
+        display: none;
+    }
+    .main_part {
+        height: 55%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+        .main_part p {
+        padding: 0 30px;
+        font-size: 0.7rem;
+        padding-bottom: 30%;
+    }
+        .main_part h1 {
+        padding: 0 26px;
+        padding-top: 65%;
+        font-size: 1.2rem;
+    }
+    .landing .c1{
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: column;
+    }
+    .headline{
+        margin-top: 0;
+    }
+    .c1 h4 {
+        font-size: 0.7rem;
+    }
+    .politics2 .c1 h4 {
+        font-size: 0.7rem;
+    }
+    .sport .c1 h4 {
+        font-size: 0.7rem;
+    }
+    .tech .c1 h4 {
+        font-size: 0.7rem;
+    }
+    .entertainment .c1 h4 {
+        font-size: 0.7rem;
+    }
+    .main_part2 p {
+        color: white;
+        text-align: center;
+        padding: 15px 35px;
+        font-size: 0.7rem;
+        padding-bottom: 30%;
+    }
+    .main_part2 h1 {
+        font-size: 1.2rem;
+        padding-top: 0;
+    }
+    .side_part {
+        height: 30%;
+    }
+    .politics2 {
+    height: 800px;
+    flex-direction: column;
+    }
+    .side_part1 {
+        height: 76%;
+        width: 100%;
+    }
+    .politics2 .side_part2 p{
+        color: white;
+        text-align: center;
+        padding: 15px 25px;
+        font-size: 0.6rem;
+    }
+        .politics2 .side_part2 h1 {
+        padding: 0 12px;
+        font-size: 1rem;
+    }
+    .sport .side_part2 p{
+        color: white;
+        text-align: center;
+        padding: 15px 25px;
+        font-size: 0.6rem;
+    }
+        .sport .side_part2 h1 {
+        padding: 0 12px;
+        font-size: 1rem;
+    }
+    .tech .side_part2 p{
+        color: white;
+        text-align: center;
+        padding: 15px 25px;
+        font-size: 0.6rem;
+    }
+        .tech .side_part2 h1 {
+        padding: 0 12px; 
+        font-size: 1rem;
+    }
+    .entertainment .side_part2 p{
+        color: white;
+        text-align: center;
+        padding: 15px 25px;
+        font-size: 0.6rem;
+    }
+        .entertainment .side_part2 h1 {
+        padding: 0 12px;
+        font-size: 1rem;
+    }
+    .side_part2 {
+        height: 35%;
+        width: 86%;
+        margin-bottom: 10%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .main_part2{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .sport{
+        flex-direction: column;
+        height: 800px;
+    }
+    .side_part1{
+        margin-top: 10%;
+    }
+    .sport2{
+        flex-direction: column;
+    }
+    .side_part3{
+        margin-top: 10%;
+        width: 90%;
+    }
+    .side_part4{
+        width: 90%;
+    }
+    .side_part4 p{
+        font-size: 0.8rem;
+    }
+    .side_part4 h1{
+        font-size: 1.2rem;
+    }
+    .tech{
+        flex-direction: column;
+        height: 800px;
+    }
+    .tech2 h1{
+        font-size: 1.2rem;
+    }
+    .tech2 p{
+        font-size: 0.8rem;
+        padding: 15px 46px;
+    }
+    .entertainment{
+        flex-direction: column;
+        height: 800px;
+    }
+    .stories{
+        height: 800px;
+    }
+    .stories1{
+        margin-left: 2%;
+        width: 100%;
+    }
+    .stories2{
+        margin-left: 2%;
+        width: 100%;
+    }
+    .contact {
+        height: 92vh;
+    }
+    .contact h1 {
+        padding-top: 10%;
+    }
+    .con1{
+        height: 27%;
+        display: block;
+    }
+    .con1 h1 {
+        padding-top: 0px;
+        font-size: 17px;
+    }
+    .side_part5 {
+        height: 43%;
+        width: 100%;
+        font-size: 19px;
+        display: block;
+        padding-top: 15px;
+    }
+    .side_part6{
+        height: 20%;
+    }
+    .side_part6 input {
+        width: 124%;
+        height: 50PX;
+        margin-right: -75px;
+        padding-left: 30px;
+        margin-top: 0px;
+    }
+    .side_part6 button {
+        width: 69%;
+        height: 50PX;
+        bottom: 90px;
+        right: -165px;
+    }
+    .c2{
+        height: 30%;
+        font-size: 10px;
+    }
+    .copyright{
+        font-size: 13px;
+        padding: 15px;
+    }
+    .tech2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .story h4{
+        font-size: 0.6rem;
+    }
+    .story pre{
+        font-size: 0.4rem;
+    }
+    .bg{
+        height: 65%;
+    }
+    .story .headline {
+    position: relative;
+    bottom: 20%;
+    }
+}
+
+/* Images */
+
+.c01{
+    background-image: url('img3.jpeg');
+    background-size: cover;
+}
+.c02{
+    background-image: url('img10.png');
+    background-size: cover;
+}
+.c03{
+    background-image: url('img17.jpg');
+    background-size: cover;
+}
+.c04{
+    background-image: url('img28.jpg');
+    background-size: cover;
+}
+.politics2 .side_part2{
+    animation: slideshow2 60s infinite;
+    background-size: cover;
+}
+.c05{
+    background-image: url(img24.jpg);
+    background-size: cover;
+}
+.c06{
+    background-image: url(img15.jpg);
+    background-size: cover;
+}
+.c07{
+    background-image: url(img19.png);
+    background-size: cover;
+}
+.c08{
+    background-image: url(img28.jpg);
+    background-size: cover;
+}
+.c09{
+    animation: slideshow3 60s infinite;
+    background-size: cover;
+}
+.c10{
+    background-image: url(img30.jpg);
+    background-size: cover;
+}
+.c11{
+    background-image: url(img34.jpg);
+    background-size: cover;
+}
+.c12{
+    background-image: url(img25.jpg);
+    background-size: cover;
+}
+.c13{
+    background-image: url(img42.png);
+    background-size: cover;
+}
+.c14{
+    background-image: url(img37.jpg);
+    background-size: cover;
+}
+.c15{
+    animation: slideshow4 60s infinite;
+    background-size: cover;
+}
+.c16{
+    background-image: url(img13.jpg);
+    background-size: cover;
+}
+.c17{
+    background-image: url(img20.webp);
+    background-size: cover;
+}
+.c18{
+    background-image: url(img11.jpg);
+    background-size: cover;
+}
+.c19{
+    background-image: url(img41.webp);
+    background-size: cover;
+}
+.tech2{
+    background-image: url(img14.webp);
+    background-size: cover;
+}
+.c20{
+    animation: slideshow5 60s infinite;
+    background-size: cover;
+}
+.c21{
+    background-image: url(img12.jpg);
+    background-size: cover;
+}
+.c22{
+    background-image: url(img39.jpg);
+    background-size: cover;
+}
+.c23{
+    background-image: url(img5.png);
+    background-size: cover;
+}
+.c24{
+    background-image: url(img2.webp);
+    background-size: cover;
+}
+.c25{
+    background-image: url(img6.jpg);
+    background-size: cover;
+}
+.c26{
+    background-image: url(img7.webp);
+    background-size: cover;
+}
+.c27{
+    background-image: url(img9.jpg);
+    background-size: cover;
+}
+.c28{
+    background-image: url(img26.jpg);
+    background-size: cover;
+}
+.c29{
+    background-image: url(img31.jpg);
+    background-size: cover;
+}
+.c30{
+    background-image: url(img36.png);
+    background-size: cover;
+}
+.c31{
+    background-image: url(img38.jpg);
+    background-size: cover;
+}
+.c32{
+    background-image: url(img40.jpg);
+    background-size: cover;
+}
+
+/* animations  */
+
+.landing .c1:hover h4{
+    visibility: hidden;
+    transition: 20ms;
+}
+.c1:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.politics2 .c1:hover{
+    background-color: black;
+    transition: 1s;
+}
+.politics2 .c1:hover h4{
+    color: white;
+    transition: 1s;
+}
+.sport .c1:hover{
+    background-color: black;
+    transition: 1s;
+}
+.sport .c1:hover h4{
+    color: white;
+    transition: 1s;
+}
+.tech .c1:hover{
+    background-color: black;
+    transition: 1s;
+}
+.tech .c1:hover h4{
+    color: white;
+    transition: 1s;
+}
+.entertainment .c1:hover{
+    background-color: black;
+    transition: 1s;
+}
+.entertainment .c1:hover h4{
+    color: white;
+    transition: 1s;
+}
+
+.story:hover .headline{
+    border-radius: 10px;
+}
+.story:hover{
+    transform: scale(1.1);
+    border-radius: 15px;
+    transition: 1s;
+}
+@keyframes slideshow {
+    0%{
+        background-image: url('img17.jpg');
+        
+    }
+    35%{
+        background-image: url('img3.jpeg');
+        
+    }
+    70%{
+        background-image: url('img10.png');
+        
+    }
+    100%{
+        background-image: url('img28.jpg');
+        
+    }
+    
+}
+@keyframes slideshow2 {
+    0%{
+        background-image: url('img8.jpg');
+        background-size: cover;
+    }
+    35%{
+        background-image: url('img24.jpg');
+        background-size: cover;
+    }
+    70%{
+        background-image: url('img15.jpg');
+        background-size: cover;
+    }
+    100%{
+        background-image: url('img19.png');
+        background-size: cover;
+    }
+}
+@keyframes slideshow3 {
+    0%{
+        background-image: url('img34.jpg');
+        background-size: cover;
+    }
+    35%{
+        background-image: url('img30.jpg');
+        background-size: cover;
+    }
+    70%{
+        background-image: url('img25.jpg');
+        background-size: cover;
+    }
+    100%{
+        background-image: url('img42.png');
+        background-size: cover;
+    }
+}
+@keyframes slideshow4 {
+    0%{
+        background-image: url('img11.jpg');
+        background-size: cover;
+    }
+    35%{
+        background-image: url('img30.jpg');
+        background-size: cover;
+    }
+    70%{
+        background-image: url('img20.webp');
+        background-size: cover;
+    }
+    100%{
+        background-image: url('img41.webp');
+        background-size: cover;
+    }
+}
+@keyframes slideshow5 {
+    0%{
+        background-image: url('img39.jpg');
+        background-size: cover;
+    }
+    35%{
+        background-image: url('img12.jpg');
+        background-size: cover;
+    }
+    70%{
+        background-image: url('img5.png');
+        background-size: cover;
+    }
+    100%{
+        background-image: url('img2.webp');
+        background-size: cover;
+    }
+}
+@keyframes zoomout{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes fade{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#nh:hover{
+    background-color: transparent;
+    transform: scale(1);
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+<!Doctype html>
+<html>
+    <html>
+        <head>
+            <meta charser="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>News Page</title>
+        </head>
+        <body>
+            <header>
+                <div class="navbar">
+                    <div class="logo">
+                        <h1>A News</h1>
+                    </div>
+                    <div class="nav-links">
+                        <ul>
+                            <li><a href="#politics">Politics</a></li>
+                            <li><a href="#sport">Sports</a></li>
+                            <li><a href="#tech">Tech</a></li>
+                            <li><a href="#entertainment">Entertainment</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <section class="landing">
+                <div class="main_part"><h1>Protests Breaks Out In California</h1>
+                <br>
+            <p>Protests broke out in California as thousands took to the streets to 
+                oppose recent policy changes, leading to clashes with law 
+                enforcement and a state of emergency declared in several cities.
+            </p></div>
+                <div class="side_part">
+                    <div class="c1 c01">
+                        <h4>New Lagislation Sparks
+                        <br>
+                        Debate Among Lawmakers</h4>
+                    </div>
+                    <div class="c1 c02">
+                        <h4>What This Election Means For Democrasy</h4>
+                    </div>
+                    <div class="c1 c03">
+                        <h4>Protests Breaks Out In California</h4>
+                    </div>
+                    <div class="c1 c04">
+                        <h4>Election 2024: Key Issues and Candidates to Watch</h4>
+                    </div>
+                    </div>
+            </section>
+            <section class="politics" id="politics">
+                <div class="main_part2"><h1>Protests Break Out In Taxes</h1>
+                <p>Protests broke out in California as thousands took to the street to oppose 
+                    recent policy changes. leading to clashes with law enforcement and a state of emergency
+                    declared in several cities.
+                </p></div>
+            </section>
+            <section class="politics2">
+                <div class="side_part1">
+                    <div class="c1"id="nh"><h1>Politics</h1></div>
+                    <div class="c1">
+                        <div class="c1_background c05"></div>
+                        <div class="headline">
+                        <h4>Understanding Suffering: God's Promise Of No More Pain</h4>
+                        <pre>Kevin jones        Yesterday</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c06"></div>
+                        <div class="headline">
+                        <h4>Legal and ethical issues of online journalism</h4>
+                        <pre>Usman khan        may 12</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c07"></div>
+                        <div class="headline">
+                        <h4>Senate Approves Controversial Budget Proposal</h4>
+                        <pre>mike gos        23 june</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c08"></div>
+                        <div class="headline">
+                        <h4>Political Scandals: A look at the Latest Controverses</h4>
+                        <pre>james comma        30 october</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_part2"><h1>In-Depth Analysis: The Future of Healthcare Reform</h1>
+                <p>In-Depth Analysis: The future of healthcare reform analysis the potential impacts of
+                    proposed policy changes on access, costs, and qualities of care for millions of humans.
+                </p></div>
+            </section>
+            <section class="sport" id="sport">
+                <div class="side_part1">
+                    <div class="c1" id="nh"><h1>Sports</h1></div>
+                    <div class="c1">
+                        <div class="c1_background c10"></div>
+                        <div class="headline">
+                        <h4>Navigating Ethical Dilemmas in Journalism</h4>
+                        <pre>kimma mos        today</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c11"></div>
+                        <div class="headline">
+                        <h4>Road Worrior' James Degale returns home after winning</h4>
+                        <pre>jessica fam        Yesterday</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c12"></div>
+                        <div class="headline">
+                        <h4>Soccer Saturday Panel take on pre-match Accuracy Challenge</h4>
+                        <pre>Melly jons        1 week ago</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c13"></div>
+                        <div class="headline">
+                        <h4>Pixar Story Telling Tecniques for Startup Founder</h4>
+                        <pre>Bob cameo        Yesterday</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_part2 c09">
+                    <h1>Road worrior' James DeGale returns home</h1>
+                <p>Road worrior: The boxer James MK DeGale return home come to his family after winning 
+                    dead boxing tornament 3rd time in arena.
+                </p>
+                </div>
+            </div>
+                
+            </section>
+            <section class="sport2">
+                <div class="side_part3 c14"></div>
+                <div class="side_part4">
+                <h1>Local Government Faces Criticism Over new Policies</h1>
+                <p>Local government faces criticism over new policies as thousands took to the street to oppose 
+                    recent policy changes. leading to clashes with law enforcement and a state of emergency
+                    declared in several cities.</p>
+                </div>
+            </section>
+            <section class="tech" id="tech">
+                <div class="side_part1">
+                    <div class="c1"id="nh"><h1>Tech</h1></div>
+                    <div class="c1">
+                        <div class="c1_background c16"></div>
+                        <div class="headline">
+                        <h4>The Importance of Technological Innovation for new Generation</h4>
+                        <pre>Bisma        today</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c17"></div>
+                        <div class="headline">
+                        <h4>Innovative Technology and how it is Shaping our Future</h4>
+                        <pre>Rabi mes        2 november</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c18"></div>
+                        <div class="headline">
+                        <h4>AI Advancement space Accessiblity Breakthroughts</h4>
+                        <pre>Emily wats        9 march</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c19"></div>
+                        <div class="headline">
+                        <h4>Quantum Computers are showing more practical uses in scientific discovery</h4>
+                        <pre>Kevin frank        27 August</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_part2 c15">
+                    <h1>AI Advancement space Accessiblity Breakthroughts and cybersecurity concerns</h1>
+                <p>With major players like Google, Apple, and Samsung pushing boundaries in smart wearables
+                    AI glasses, Quantum computing, and eco-friendly tech.
+                </p></div>
+                </div>
+            </section>
+            <section class="tech2">
+                <h1>Ionic Roles: Actors Who Defined a Generation</h1>
+                <p>Ionic roles played by actors who defined a generation have only shaped cenimatic history but
+                    also left a lasting cultural ampliment. Reasonating with audiences worldwide and becoming timeless
+                    symbols of the era.
+                </p>
+            </section>
+            <section class="entertainment" id="entertainment">
+                <div class="side_part1">
+                    <div class="c1"id="nh"><h1>Entertainment</h1></div>
+                    <div class="c1">
+                        <div class="c1_background c21"></div>
+                        <div class="headline">
+                        <h4>When Ethics can coset a journalism work liberty</h4>
+                        <pre>Kevin jones        Yesterday</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c22"></div>
+                        <div class="headline">
+                        <h4>Rising Stars: New Faces to Watch in Hollywood</h4>
+                        <pre>Marii ken        14 December</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c23"></div>
+                        <div class="headline">
+                        <h4>Records in India: Dhurandhar Takes in First of Many on Third Saturday</h4>
+                        <pre>Kajal div        5 June</pre>
+                        </div>
+                    </div>
+                    <div class="c1">
+                        <div class="c1_background c24"></div>
+                        <div class="headline">
+                        <h4>Conductor Breaks down the Genius of Bohemian Rhapsody</h4>
+                        <pre>mano dhori        Yesterday</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="side_part2 c20">
+                    <h1>Rising Stars: New Faces to Watch in Hollywood</h1>
+                <p>Rising stars in Hollywood the new faces to watch are generating buzz with their fresh talent and captivating
+                    performance poised to make significant strides in shaping the future of cenima and entertainment.
+                </p></div>
+                </div>
+            </section>
+            <section class="stories"id="stories">
+                <h1>Stories</h1>
+                <div class="stories1">
+                    <div class="story story1 \">
+                        <div class="bg c29"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>The Battle for online Petitions for Direct Damocrasy</h4>
+                        <pre>Tailor store        Today</pre>
+                        </div>
+                    </div>
+                    <div class="story story2 ">
+                        <div class="bg c30"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>Monday Night Recap: We are Winning to the Cup</h4>
+                        <pre>Gabby jones        3rd January</pre>
+                        </div>
+                    </div>
+                    <div class="story story3 ">
+                        <div class="bg c31"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>The human connection: Heartwarming stories from that Unite us</h4>
+                        <pre>Frank        15 November</pre>
+                        </div>
+                    </div>
+                    <div class="story story4 ">
+                        <div class="bg c32"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>A Stroll Through a Graveyard by Myla Kim</h4>
+                        <pre>Peter boby        25 July</pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="stories2">
+                    <div class="story story5 ">
+                        <div class="bg c25"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>You'll beleive in God winks after hearing this</h4>
+                        <pre>Osborn krey        12 March</pre>
+                        </div>
+                    </div>
+                    <div class="story story6 ">
+                        <div class="bg c26"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>Why a lot of People don't Realise about Tokyo is Great</h4>
+                        <pre>Baelis mely        8 December</pre>
+                        </div>
+                    </div>
+                    <div class="story story7 ">
+                        <div class="bg c27"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>Kamala Harris accepts Democratic nomination</h4>
+                        <pre>Bob jones        Yesterday</pre>
+                        </div>
+                    </div>
+                    <div class="story story8 ">
+                        <div class="bg c28"></div>
+                        <div class="description"></div>
+                        <div class="headline">
+                        <h4>Pixar Story telling Tecniques for Startup Founders</h4>
+                        <pre>Melly jae        Today</pre>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <h1>A News </h1>
+                <div class="con1">
+                    <div class="side_part5">
+                        <h1>Get the Latest News Delivered Right to Your Inbox!</h1>
+                    </div>
+                    <div class="side_part6">
+                        <input type="text" placeholder="Enter your email"><button><a href="#">Email</a></button>
+                    </div>
+                </div>
+                <hr>
+                <div class="c2">
+                    <div class="side_part7">
+                      <a href="#politics"><h4>Politics</h4></a>
+                      <a href="#sport"><h4>Sports</h4></a>
+                     <a href="#tech"><h4>Tech</h4></a>
+                       <a href="#entertainment"><h4>Entertainment</h4></a>
+                    </div>
+                    <div class="side_part8">
+                       <a href="#stories"><h4>Stories</h4></a>
+                       <a href="#"><h4>Archeive</h4></a>
+                       <a href="https://www.linkedin.com/in/moiz-kz-b5531131a/"target="main"><h4>Contact</h4></a>
+                      <a href="#"><h4>Terms of use</h4></a>
+                    </div>
+                    <div class="side_part9">
+                      <a href="https://www.linkedin.com/in/moiz-kz-b5531131a/"target="main"><h4>About</h4></a>
+                      <a href="#"><h4>FAQ</h4></a>
+                     <a href="#"><h4>Careers</h4></a>
+                      <a href="#"><h4>Advertise</h4></a>
+                    </div>
+                    <div class="side_part10">
+                        <a href="https://www.linkedin.com/in/moiz-kz-b5531131a/"target="main"><h4>Linked In</h4></a>
+                      <a href="https://www.twitter.com"target="main"><h4>Twitter (x)</h4></a>
+                     <a href="https://www.instagram.com/moiz.kz?utm_source=qr&igsh=MX40"target="main"><h4>Instagram</h4></a>
+                      <a href="https://www.facebook.com/profile.php?id=100091208310069"target="main"><h4>Facebook</h4></a>
+                    </div>
+                </div>
+                <hr class="hr">
+                          <h4 class="copyright">@ 2025 Coded by MOIZ KZ all rights reserved | Privacy Policy | Terms and Conditions</h4>
+            </section>
+            
+        </body>
+
+    </html>
+</html>
